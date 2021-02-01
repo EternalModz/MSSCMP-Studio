@@ -1,0 +1,14 @@
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csprojAssemblyReference.cache
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Form1.resources
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Properties.Resources.resources
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.GenerateResource.cache
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.CoreCompileInputs.cache
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.exe.config
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.exe
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.pdb
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.Fody.CopyLocal.cache
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.CopyComplete
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.exe
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.pdb
+C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Forms.ProgramInfo.resources

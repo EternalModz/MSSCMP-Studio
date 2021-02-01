@@ -1,0 +1,6 @@
+extract : Extracting C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\Default\Minecraft.msscmp
+load    : load C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\bin\Debug\Default\Minecraft.msscmp
+load    : |   get file start point
+load    : |   get file headers backup
+load    : +   00048000 
+extract :LExtracting
