@@ -39,6 +39,7 @@ namespace MSSCMP_Studio
 
         public string arcfile = "";
         public string appdata = Environment.CurrentDirectory + "\\tmp\\";
+        public string LocalFolder = Environment.CurrentDirectory;
         public static string url = "http://localhost";
         string version = "1.1";
         public bool developer = false;
@@ -83,9 +84,9 @@ namespace MSSCMP_Studio
                                 if(MessageBox.Show("Bink Audio type detected!\nConvert audio?", "Conversion", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                 {
 
-                                    File.WriteAllText(Environment.CurrentDirectory + "\\BinkMan\\files.txt", ofd.FileName);
+                                    File.WriteAllText(LocalFolder + "\\BinkMan\\files.txt", ofd.FileName);
                                     System.Diagnostics.Process prc1 = new System.Diagnostics.Process();
-                                    prc1.StartInfo.FileName = (Environment.CurrentDirectory + "\\BinkMan\\BinkMan.exe");
+                                    prc1.StartInfo.FileName = (LocalFolder + "\\BinkMan\\BinkMan.exe");
                                     prc1.Start();
                                     prc1.WaitForExit();
                                 }
@@ -94,9 +95,9 @@ namespace MSSCMP_Studio
                             {
                                 if (MessageBox.Show("Waveform Audio type detected!\nConvert audio?", "Conversion", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                 {
-                                    File.WriteAllText(Environment.CurrentDirectory + "\\BinkMan\\files.txt", ofd.FileName);
+                                    File.WriteAllText(LocalFolder + "\\BinkMan\\files.txt", ofd.FileName);
                                     System.Diagnostics.Process prc1 = new System.Diagnostics.Process();
-                                    prc1.StartInfo.FileName = (Environment.CurrentDirectory + "\\BinkMan\\BinkMan.exe");
+                                    prc1.StartInfo.FileName = (LocalFolder + "\\BinkMan\\BinkMan.exe");
                                     prc1.Start();
                                     prc1.WaitForExit();
                                 }
@@ -208,6 +209,7 @@ namespace MSSCMP_Studio
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(LocalFolder);
             this.GetType().Assembly.GetManifestResourceNames();
             foreach (string name in this.GetType().Assembly.GetManifestResourceNames())
                 Console.WriteLine(name);
@@ -223,13 +225,13 @@ namespace MSSCMP_Studio
             try
             {
                 new System.Net.WebClient().DownloadString(url);
-                System.IO.File.WriteAllText(Environment.CurrentDirectory + "\\url.txt", url);
-                System.IO.File.WriteAllText(Environment.CurrentDirectory + "\\MSSCMP_Changelog.txt", url + "/studio/BINK/api/MSSCMP_Changelog.txt");
+                System.IO.File.WriteAllText(LocalFolder + "\\url.txt", url);
+                System.IO.File.WriteAllText(LocalFolder + "\\MSSCMP_Changelog.txt", url + "/studio/BINK/api/MSSCMP_Changelog.txt");
                 richTextBox1.Text = new System.Net.WebClient().DownloadString(url + "/studio/BINK/api/MSSCMP_Changelog.txt");
             }
             catch
             {
-                System.IO.File.WriteAllText(Environment.CurrentDirectory + "\\url.txt", "http://phoenixarc.github.io/pckstudio.tk");
+                System.IO.File.WriteAllText(LocalFolder + "\\url.txt", "http://phoenixarc.github.io/pckstudio.tk");
                 url = "http://phoenixarc.github.io/pckstudio.tk";
             }
             try
@@ -239,7 +241,7 @@ namespace MSSCMP_Studio
 
                     if (MessageBox.Show("Update Avaliable\nDownload?", "Alert!", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        System.Diagnostics.Process.Start(Environment.CurrentDirectory + "\\MSSCMPUpdater.exe");
+                        System.Diagnostics.Process.Start(LocalFolder + "\\MSSCMPUpdater.exe");
                     }
                 }
                 else
@@ -271,10 +273,10 @@ namespace MSSCMP_Studio
                 {
                     dir.Delete(true);
                 }
-                File.Delete(Environment.CurrentDirectory + "\\mss.log");
-                Directory.Delete(Environment.CurrentDirectory + "\\tmp");
+                File.Delete(LocalFolder + "\\mss.log");
+                Directory.Delete(LocalFolder + "\\tmp");
                 if(developer)
-                File.WriteAllText(Environment.CurrentDirectory + "\\Consolelog.txt", Console.Out.ToString());
+                File.WriteAllText(LocalFolder + "\\Consolelog.txt", Console.Out.ToString());
             }
             catch { }
         }
@@ -689,13 +691,13 @@ namespace MSSCMP_Studio
             catch (Exception exep)
             {
                 string errormsg = DateTime.Today.Day + "-" + DateTime.Today.Month + "-" + DateTime.Today.Year + "::" + DateTime.Now.Hour + "_" + DateTime.Now.Minute + " -- " + exep.Message.ToString() + "\n\n" + exep.StackTrace.ToString();
-                System.IO.Directory.CreateDirectory(Environment.CurrentDirectory + "\\LOGS\\");
-                System.IO.File.AppendAllText(Environment.CurrentDirectory + "\\LOGS\\logFile-" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-" + DateTime.Today.Year + ".log", errormsg + "\n\n===============NEWLOG===============n");
+                System.IO.Directory.CreateDirectory(LocalFolder + "\\LOGS\\");
+                System.IO.File.AppendAllText(LocalFolder + "\\LOGS\\logFile-" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-" + DateTime.Today.Year + ".log", errormsg + "\n\n===============NEWLOG===============n");
 
 
                 if (MessageBox.Show("Update Avaliable\nDownload?", "Error!", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    System.Diagnostics.Process.Start(Environment.CurrentDirectory + "\\ARCUpdater.exe");
+                    System.Diagnostics.Process.Start(LocalFolder + "\\ARCUpdater.exe");
                 }
             }
         }
@@ -723,9 +725,9 @@ namespace MSSCMP_Studio
                     if (Path.GetExtension(EntryList.SelectedNode.Tag.ToString()) == ".binka")
                     {
                         Console.WriteLine("BINKA!");
-                        File.WriteAllText(Environment.CurrentDirectory + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
+                        File.WriteAllText(LocalFolder + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
                         System.Diagnostics.Process prc1 = new System.Diagnostics.Process();
-                        prc1.StartInfo.FileName = (Environment.CurrentDirectory + "\\BinkMan\\BinkMan.exe");
+                        prc1.StartInfo.FileName = (LocalFolder + "\\BinkMan\\BinkMan.exe");
                         prc1.Start();
                         prc1.WaitForExit();
                         System.Diagnostics.Process prc = new System.Diagnostics.Process();
@@ -807,9 +809,9 @@ namespace MSSCMP_Studio
                     if (sfd.Filter == "Waveform Audio | *.wav")
                     {
 
-                        File.WriteAllText(Environment.CurrentDirectory + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
+                        File.WriteAllText(LocalFolder + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
                         System.Diagnostics.Process prc1 = new System.Diagnostics.Process();
-                        prc1.StartInfo.FileName = (Environment.CurrentDirectory + "\\BinkMan\\BinkMan.exe");
+                        prc1.StartInfo.FileName = (LocalFolder + "\\BinkMan\\BinkMan.exe");
                         prc1.Start();
                         prc1.WaitForExit();
                         File.Copy(EntryList.SelectedNode.Tag.ToString().Replace(".binka", ".wav"), sfd.FileName, true);
@@ -877,9 +879,9 @@ namespace MSSCMP_Studio
                 {
                     if (sfd.Filter == "Waveform Audio | *.wav")
                     {
-                        File.WriteAllText(Environment.CurrentDirectory + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
+                        File.WriteAllText(LocalFolder + "\\BinkMan\\files.txt", EntryList.SelectedNode.Tag.ToString());
                         System.Diagnostics.Process prc1 = new System.Diagnostics.Process();
-                        prc1.StartInfo.FileName = (Environment.CurrentDirectory + "\\BinkMan\\BinkMan.exe");
+                        prc1.StartInfo.FileName = (LocalFolder + "\\BinkMan\\BinkMan.exe");
                         prc1.Start();
                         prc1.WaitForExit();
                         File.Copy(sfd.FileName, EntryList.SelectedNode.Tag.ToString().Replace(".wav", ".binka"), true);
@@ -915,7 +917,7 @@ namespace MSSCMP_Studio
             Classes.Variables.selectedFilePath = "";
             try
             {
-                Classes.Variables.openFilePath = Environment.CurrentDirectory + "\\Default\\Minecraft.msscmp";
+                Classes.Variables.openFilePath = LocalFolder + "\\Default\\Minecraft.msscmp";
                 extractMsscmp(Classes.Variables.openFilePath);
                 DateTime present = DateTime.Now;
                 DateTime addFiveSeconds = DateTime.Now.AddSeconds(5);
