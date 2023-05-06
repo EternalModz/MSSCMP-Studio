@@ -12,3 +12,19 @@ C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studi
 C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.exe
 C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.pdb
 C:\Users\phoen\source\repos\##MSSCMP Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Forms.ProgramInfo.resources
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.AssemblyReference.cache
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.SuggestedBindingRedirects.cache
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Properties.Resources.resources
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.GenerateResource.cache
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.CoreCompileInputs.cache
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.exe
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.pdb
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.exe.config
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.exe
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\bin\Debug\MSSCMP Studio.pdb
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\bin\Debug\DarkNet.xml
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.Fody.CopyLocal.cache
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP Studio.csproj.CopyComplete
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.MainForm.resources
+C:\Users\EternalModz\Desktop\Development\MSSCMP-Studio\MSSCMP Studio\obj\Debug\MSSCMP_Studio.Forms.AboutForm.resources
